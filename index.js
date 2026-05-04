@@ -32,7 +32,8 @@ client.on("guildMemberAdd", async (member) => {
 `_ _
 _ _          heℓℓo there   ✿    ${member} !
 _ _                  <:line_1:1500846098082824273><:line_1:1500846098082824273><:line_1:1500846098082824273><:line_1:1500846098082824273><:line_1:1500846098082824273>
-_ _  <a:cutesy_1:1500496943787544637>.  weℓcome to ℓuciα noire  ˚ ︵`
+_ _  <a:cutesy_1:1500496943787544637>.  weℓcome to ℓuciα noire  ˚ ︵
+_ _`
               }
             ],
             accessory: {
@@ -43,21 +44,21 @@ _ _  <a:cutesy_1:1500496943787544637>.  weℓcome to ℓuciα noire  ˚ ︵`
             }
           },
 
-          { type: 14 }, // 👈 ISANG DIVIDER LANG (dito na lang sa baba)
-          
+          { type: 14 }, // 👈 gray thin line (mahaba)
+
           {
-            type: 1, // 👈 BUTTON (HINDI NA BINAGO POSISYON)
+            type: 1, // 👈 VERIFY BUTTON (same position, hindi ginalaw)
             components: [
               {
                 type: 2,
-                style: 5,
+                style: 2, // 👈 button lang (walang link)
                 label: "verify",
                 emoji: {
-                  id: "1500508074606329946",
-                  name: "crown_1",
+                  id: "1500855939002142867",
+                  name: "bow_1",
                   animated: true
                 },
-                url: "https://discord.com/channels/1455613450935079109/1456606731240083476"
+                custom_id: "verify_button"
               }
             ]
           }
