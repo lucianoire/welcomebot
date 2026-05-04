@@ -7,7 +7,6 @@ const client = new Client({
   ]
 });
 
-// ✅ WELCOME CHANNEL (dito lalabas message)
 const WELCOME_CHANNEL_ID = "1455623211831267359";
 
 client.once("ready", () => {
@@ -22,39 +21,32 @@ client.on("guildMemberAdd", async (member) => {
     flags: MessageFlags.IsComponentsV2,
     components: [
       {
-        type: 17, // Container (box)
+        type: 17, // BOX
         components: [
           {
-            type: 9, // Section (text + side image)
+            type: 9,
             components: [
               {
                 type: 10,
                 content:
 `_ _
-_ _            heℓℓo there   ✿    ${member} !
-_ _`
+_ _          heℓℓo there   ✿    ${member} !
+_ _                  <:line_1:1500846098082824273><:line_1:1500846098082824273><:line_1:1500846098082824273><:line_1:1500846098082824273><:line_1:1500846098082824273>
+_ _  <a:cutesy_1:1500496943787544637>.  weℓcome to ℓuciα noire  ˚ ︵`
               }
             ],
             accessory: {
-              type: 11, // side image
+              type: 11,
               media: {
                 url: "https://cdn.discordapp.com/attachments/1480096108410568785/1500511013831966951/dollEmoji.gif"
               }
             }
           },
 
-          { type: 14 }, // gray thin line (divider)
-
+          { type: 14 }, // 👈 ISANG DIVIDER LANG (dito na lang sa baba)
+          
           {
-            type: 10,
-            content:
-`_ _    <a:cutesy_1:1500496943787544637>.  weℓcome to ℓuciα noire  ˚ ︵`
-          },
-
-          { type: 14 }, // gray thin line (divider)
-
-          {
-            type: 1, // button row (nasa baba ng box)
+            type: 1, // 👈 BUTTON (HINDI NA BINAGO POSISYON)
             components: [
               {
                 type: 2,
@@ -75,5 +67,4 @@ _ _`
   });
 });
 
-// 🔑 Railway TOKEN
 client.login(process.env.TOKEN);
