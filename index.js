@@ -7,8 +7,8 @@ const client = new Client({
   ]
 });
 
-// 🔁 PALITAN MO NG CHANNEL ID MO
-const WELCOME_CHANNEL_ID = "1456606731240083476";
+// ✅ WELCOME CHANNEL (dito lalabas message)
+const WELCOME_CHANNEL_ID = "1455623211831267359";
 
 client.once("ready", () => {
   console.log(`Logged in as ${client.user.tag}`);
@@ -22,7 +22,7 @@ client.on("guildMemberAdd", async (member) => {
     flags: MessageFlags.IsComponentsV2,
     components: [
       {
-        type: 17, // Container
+        type: 17, // Container (box)
         components: [
           {
             type: 9, // Section (text + side image)
@@ -36,14 +36,14 @@ _ _`
               }
             ],
             accessory: {
-              type: 11,
+              type: 11, // side image
               media: {
                 url: "https://cdn.discordapp.com/attachments/1480096108410568785/1500511013831966951/dollEmoji.gif"
               }
             }
           },
 
-          { type: 14 }, // divider
+          { type: 14 }, // gray thin line (divider)
 
           {
             type: 10,
@@ -51,10 +51,10 @@ _ _`
 `_ _    <a:cutesy_1:1500496943787544637>.  weℓcome to ℓuciα noire  ˚ ︵`
           },
 
-          { type: 14 }, // divider
+          { type: 14 }, // gray thin line (divider)
 
           {
-            type: 1, // button row
+            type: 1, // button row (nasa baba ng box)
             components: [
               {
                 type: 2,
@@ -75,5 +75,5 @@ _ _`
   });
 });
 
-// 🔑 TOKEN galing sa Railway Variables
+// 🔑 Railway TOKEN
 client.login(process.env.TOKEN);
