@@ -44,21 +44,31 @@ _ _`
             }
           },
 
-          { type: 14 }, // 👈 gray thin line (mahaba)
+          { type: 14 }, // divider
 
           {
-            type: 1, // 👈 VERIFY BUTTON (same position, hindi ginalaw)
+            type: 1, // BUTTON ROW (2 BUTTONS NA)
             components: [
               {
                 type: 2,
-                style: 2, // 👈 button lang (walang link)
+                style: 5, // LINK BUTTON
                 label: "verify",
+                emoji: {
+                  id: "1500508074606329946",
+                  name: "crown_1",
+                  animated: true
+                },
+                url: "https://discord.com/channels/1455613450935079109/1456606731240083476"
+              },
+              {
+                type: 2,
+                style: 2, // NORMAL BUTTON (emoji lang)
                 emoji: {
                   id: "1500855939002142867",
                   name: "bow_1",
                   animated: true
                 },
-                custom_id: "verify_button"
+                custom_id: "emoji_button"
               }
             ]
           }
