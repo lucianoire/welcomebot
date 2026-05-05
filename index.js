@@ -31,8 +31,8 @@ client.on("guildMemberAdd", async (member) => {
                 content:
 `_ _
 _ _          heℓℓo there   ✿    ${member} !
-_ _                  <:line_1:1500846098082824273><:line_1:1500846098082824273><:line_1:1500846098082824273><:line_1:1500846098082824273><:line_1:1500846098082824273>
-_ _  <a:cutesy_1:1500496943787544637>.  weℓcome to ℓuciα noire  ˚ ︵
+_ _                  <:line_001:1501138510474903602><:line_001:1501138510474903602><:line_001:1501138510474903602><:line_001:1501138510474903602><:line_001:1501138510474903602>
+_ _  <a:aaa_1:1501121970228432936>.  weℓcome to ℓuciα noire  ˚ ︵
 _ _`
               }
             ],
@@ -54,18 +54,18 @@ _ _`
                 style: 5, // LINK BUTTON
                 label: "verify",
                 emoji: {
-                  id: "1500508074606329946",
+                  id: "501122940723396730",
                   name: "crown_1",
                   animated: true
                 },
-                url: "https://discord.com/channels/1455613450935079109/1456606731240083476"
+                url: "https://discord.com/channels/1455613450935079109/1501109330437476372"
               },
               {
                 type: 2,
                 style: 2, // NORMAL BUTTON (emoji lang)
                 emoji: {
-                  id: "1500855939002142867",
-                  name: "bow_1",
+                  id: "1501141865905258527",
+                  name: ":cutesy_001",
                   animated: true
                 },
                 custom_id: "emoji_button"
