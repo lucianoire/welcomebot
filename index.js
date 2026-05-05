@@ -7,7 +7,7 @@ const client = new Client({
   ]
 });
 
-const WELCOME_CHANNEL_ID = "1455623211831267359";
+const WELCOME_CHANNEL_ID = "1501109324921966663";
 
 client.once("ready", () => {
   console.log(`Logged in as ${client.user.tag}`);
