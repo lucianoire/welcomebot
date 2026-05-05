@@ -39,22 +39,22 @@ _ _`
             accessory: {
               type: 11,
               media: {
-                url: "https://cdn.discordapp.com/attachments/1480096108410568785/1500511013831966951/dollEmoji.gif"
+                url: "https://cdn.discordapp.com/attachments/1501109360473149522/1501144891655454800/dollEmoji.gif"
               }
             }
           },
 
-          { type: 14 }, // divider
+          { type: 14 }, // divider (same place)
 
           {
-            type: 1, // BUTTON ROW (2 BUTTONS NA)
+            type: 1, // BUTTON ROW (HINDI GINALAW)
             components: [
               {
                 type: 2,
-                style: 5, // LINK BUTTON
+                style: 5,
                 label: "verify",
                 emoji: {
-                  id: "501122940723396730",
+                  id: "1501122940723396730",
                   name: "crown_1",
                   animated: true
                 },
@@ -62,11 +62,12 @@ _ _`
               },
               {
                 type: 2,
-                style: 2, // NORMAL BUTTON (emoji lang)
+                style: 2,
+                label: " ",
                 emoji: {
                   id: "1501141865905258527",
-                  name: ":cutesy_001",
-                  animated: true
+                  name: "cutesy_001",
+                  animated: false
                 },
                 custom_id: "emoji_button"
               }
